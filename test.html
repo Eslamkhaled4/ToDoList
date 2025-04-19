@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-do-list</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-image: url('photo.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        #new-task {
+            padding: 10px;
+            width: 300px;
+            margin-right: 10px;
+        }
+
+        #add-task {
+            padding: 10px;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr.completed td {
+            text-decoration: line-through;
+            color: #888;
+        }
+
+        .delete-btn {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>To-Do List</h1>
+
+    <input type="text" id="new-task" placeholder="Add a new task...">
+    <button id="add-task">Add Task</button>
+
+    <table id="task-table">
+        <thead>
+            <tr>
+                <th>Task</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- List of tasks will appear here -->
+        </tbody>
+    </table>
+    <script src="main.js"></script>
+</body>
+</html>
